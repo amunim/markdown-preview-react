@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkBreaks from 'remark-breaks';
-import remarkGithub from 'remark-github';
 
 export default function Preview({ id, onExpandCollapse, compressed }) {
     const markdown = useSelector(state => state.markdown);
