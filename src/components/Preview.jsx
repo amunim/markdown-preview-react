@@ -4,6 +4,8 @@ import { faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons';
 import { useSelector } from 'react-redux';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import remarkBreaks from 'remark-breaks';
+import remarkGithub from 'remark-github';
 
 export default function Preview({ id, onExpandCollapse, compressed }) {
     const markdown = useSelector(state => state.markdown);
@@ -25,8 +27,8 @@ export default function Preview({ id, onExpandCollapse, compressed }) {
                             </div>
                         </div>
                     </div>
-                    <div id={id}>
-                        <ReactMarkdown remarkPlugins={[remarkGfm]} children={markdown} className="m-0 py-0 px-4 bg-highlightbg -mb-1 w-full border-b-2" />
+                    <div id={id} className="m-0 py-0 px-4 bg-highlightbg -mb-1 w-full border-b-2">
+                        <ReactMarkdown remarkPlugins={[remarkBreaks, remarkGfm]} children={markdown}  />
                     </div>
                 </div>
             </div>
