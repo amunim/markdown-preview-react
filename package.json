@@ -1,5 +1,6 @@
 {
   "name": "markdown-preview",
+  "homepage": "https://amunim.github.io/markdown-preview-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
