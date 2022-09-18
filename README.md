@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# React Markdown Previewer
+
+A project for FCC to create a markdown previewer using React, Redux and tailwind CSS
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
